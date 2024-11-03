@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Form Rekam Medis </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="Headline"> Form Rekam Medis </h1>
+
+    <form id="form">
+        <div class="form-kontrol">
+            <label for="name" id="Label-nama"> Nama :  </label>
+            <input type="text" id="nama" placeholder="Masukkan Nama">
+        </div>
+        <div class="form-kontrol">
+            <label for="Umur" id="label-umur"> Umur : </label>
+            <input type="text" id="umur" placeholder="Masukkan umur">
+        </div>
+        <div class="form-kontrol">
+            <label for="berat" id="berat-badan"> Berat : </label>
+            <input type="text" id=" berat-badan " placeholder="Masukkan berat badan">
+        </div>
+        <div class="form-kontrol">
+            <label for="Tempat" id="tempat-tinggal"> Lokasi : </label>
+            <input type="text"  id="tempat-tinggal" placeholder="Masukkan alamat rumah">
+        </div>
+        <div class="form-kontrol">
+            <label for="Email" id="Label-email"> Email : </label>
+            <input type="email" id="Email" placeholder="Masukan Email">
+        </div>
+        <div class="form-kontrol">
+            <label for="perobatan" id="cara-perobatan"> Perobatan Menggunakan ? </label>
+            <select name="Cara" id="cara-perobatan"> 
+            <option value="Bpjs"> Bpjs </option>
+            <option value="Umum"> Umum </option>
+            <option value="Dokter-pribadi"> Dokter Pribadi </option>
+            <option value="Dokter-specialis"> Dokter Specialis </option>
+            <option value="Dukun"> Dukun </option>
+            </select>
+        </div>
+        <div class="form-kontrol"> 
+            <label for="riwayat" id="penyakit"> Apakah memiliki riwayat penyakit ? </label>
+            <input type="radio" name="riwayat" id="penyakit"> Ya
+            <input type="radio" name="riwayat" id="penyakit"> tidak
+        </div>
+        <div class="form-kontrol">
+            <label for="Turunan" id="Keturunan"> Apakah memiliki Penyakit Keturunan ? </label>
+            <input type="radio" name="Turunan" id="Keturunan"> Ya
+            <input type="radio" name="Turunan" id="Keturunan"> tidak
+        </div>
+        <div class="form-kontrol">
+            <label for="Rawat" id="Rawat-inap"> Apakah Sudah Pernah Rawat Inap ? </label>
+            <input type="radio" name="Perawatan" id="rawat"> Ya 
+            <input type="radio" name="Perawatan" id="rawat"> tidak 
+        </div>
+        <div class="form-kontrol">
+            <label for="Kunjungan"> Total Kunjungan ?</label>
+            <label for="input-1">
+                <input type="checkbox" name="inpt"> 1 kali
+            </label>
+            <label for="input-2">
+                <input type="checkbox" name="inpt"> 2 kali
+            </label>
+            <label for="input-3">
+                <input type="checkbox" name="inpt"> 3 kali + 1 rawat inap
+            </label>
+            <label for="input-4">
+                <input type="checkbox" name="inpt"> 8 kali + 3 rawat inap 
+            </label>
+            <label for="input-5">
+                <input type="checkbox" name="inpt"> 5 kali + 6 rawat inap 
+            </label>
+            <label for="input-6">
+                <input type="checkbox" name="inpt"> Lebih dari 10 
+            </label>
+        </div>
+        <div class="form-kontrol">
+            <label for="riwayat-penyakit"> Terakhir Terkena Penyakit</label>
+            <input type="text" id="riwayat-penyakit" placeholder=" Masukkan Penyakit....">
+        </div>
+        <div class="form-kontrol">
+            <label for="komentar">
+                Berikan Masukkan Anda
+            </label>
+            <textarea name="komentar" id="komentar" placeholder="Isi Masukkan Anda"></textarea>
+        </div>
+        <button type="submit"> Submit</button>
+
+    </form>
+</body>
+</html>

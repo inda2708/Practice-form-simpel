@@ -1,0 +1,95 @@
+body {
+    background-color:azure;
+    font-family: Cambria;
+    text-align: center;
+}
+h1 {
+    animation: teks ; 
+    animation-duration: 5s ;
+}
+form {
+    display: block;
+    background-color :white;
+    max-width: 650px;
+    margin: 50px auto;
+    padding: 30px 20px;
+    box-shadow: 2px 4px 9px rgba(0,0,0,0,0.5);;
+}
+.form-kontrol {
+    text-align: left;
+    margin-bottom: 20px;
+    animation: animasi ;
+    animation-duration: 5s; 
+    animation-timing-function: ease-out;
+}
+.form-kontrol label {
+    display: block;
+    padding-left: 5px;
+    margin-bottom: 10px;
+}
+.form-kontrol input,
+.form-kontrol select,
+.form-kontrol textarea{
+    padding: 4px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-style: normal;
+    font-family: 'Lucida Sans';
+    font-size: 13px;
+    line-break: 12px;
+    margin-bottom: 10px;
+    
+}
+
+.form-kontrol input[type="radio"],
+.form-kontrol input[type="checkbox"] {
+    width: 50px;
+}
+
+.form-kontrol select{
+    width: 20%;
+}
+
+button {
+    display: block;
+    margin: auto;
+    opacity: 0.5;
+    width: 50%;
+    background-color: bisque;
+    padding: 3px;
+    margin-top: 30px;
+    border: 2px solid black; 
+    font-size: 20px;
+    font-family: 'Times New Roman';
+    border-radius: 10px;
+    margin-bottom: 30px;
+    transition: 1s;
+}
+
+button:hover {
+    opacity: 1; 
+    background-color: aqua;
+    width: 70%;
+    box-shadow: 2px 4px 6px red ;
+    color: black;
+}
+
+.form-kontrol input:hover {
+    background-color: antiquewhite;
+}
+.form-kontrol textarea:hover {
+    background-color: antiquewhite;
+}
+.form-kontrol select:hover {
+    background-color: antiquewhite;
+}
+
+@keyframes animasi {
+    0% {width: 10%;} 
+    100% {width: 100%;} 
+}
+
+@keyframes teks {
+    0% { opacity: 0; color: white;} 
+    100% { opacity: 1; color: black;}
+}
